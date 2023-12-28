@@ -38,8 +38,8 @@ overflow: scroll;
   padding: 2px;
 }
 .tool-selected.selected {
-  height: 30px;
-  width: 30px;
+  height: 34px;
+  width: 34px;
   border-radius: 10px;
   background-color: rgb(214, 154, 249);
 }
@@ -280,7 +280,7 @@ margin-right: 4px !important;
   /* padding: 20px 15px 6px; */
   padding: 10px 15px 0px; /* Adjusted padding */
   height: 11rem;
-  width: 92rem;
+  width: 80vw;
   border-radius: 20px;
   display: flex;
   /* width: max-content; */
@@ -1538,10 +1538,14 @@ div#msr-pod-up {
     flex-direction: column !important;
 
   }
-  .color-demonstrator{
-    border-radius: 50%;
-    width: 4px;
-    background-color: red !important;
+
+  .color-status{
+    height: 12px !important;
+    width:11px !important;
+    border-radius: 50% !important;
+    background-color: red  !important;
+    position: absolute !important;
+    border: 1px solid black !important;
   }
   .line-background-icon {
     margin-top: -2px !important;
@@ -2780,3 +2784,8 @@ border: none;
 }
 
 
+.text-3d{
+  font-size: 1rem;
+  padding:2px 10px
+
+}

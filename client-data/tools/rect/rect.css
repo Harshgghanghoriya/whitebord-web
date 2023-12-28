@@ -1,15 +1,15 @@
 #canvas rect {
 	/*fill: none;*/
 }
-#canvas rect:nth-child(6) {
-cursor: e-resize !important
-}
+#canvas rect:nth-child(10) {
+	cursor: nw-resize !important
+}	
 #canvas rect:nth-child(7) {
-	cursor: ns-resize !important
+	cursor: e-resize !important
 }
 #canvas rect:nth-child(8) {
-	cursor: grabbing !important
+	cursor: ns-resize !important
 }
 #canvas rect:nth-child(9) {
-	cursor: nw-resize !important
+	cursor: grabbing !important
 }

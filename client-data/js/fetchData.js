@@ -19,8 +19,7 @@ var Tools = {};
 
   form.addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent default form submission
-    const inputValue = input.value;
-    console.log("Form", form);
+    const inputValue = input.value.replace(/\s+/g, '-');
     window.location.href = `board.html?board=${inputValue}&file=1`;
   });
 
@@ -79,7 +78,7 @@ function checkDisable() {
       console.log("DATA 1", data);
       var dropdown = document.getElementsByClassName("newBoard--Select");
       data.boardNames.map((name) => {
-        let formatName = decodeURIComponent(name).replace(/%20/g, ' ');
+        let formatName = decodeURIComponent(name).replace(/-/g, ' ');;
         dropdown[0].innerHTML =
           dropdown[0].innerHTML +
           `<option  value=${name}>${formatName}</option>`;

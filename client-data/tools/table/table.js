@@ -216,6 +216,7 @@ let TableObjects = [];
     onstart: createTable, // start the fn while tool is selected
     mouseCursor: "auto",
     oneTouch: false,
+    toggle: () => {},
     onquit: onQuit,
     draw: draw,
   });
