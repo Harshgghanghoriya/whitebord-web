@@ -192,8 +192,9 @@
     listeners: {},
     //draw: draw,
     onstart: onstart,
+    toggle: () => {},
     // oneTouch: false,
-    oneTouch: true,
+    oneTouch: false,
     onquit: onQuit,
     mouseCursor: "auto",
   });

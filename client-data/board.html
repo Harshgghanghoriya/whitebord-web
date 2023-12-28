@@ -638,10 +638,10 @@
                         <input type="color" value="#ff00ff" id="chooseColor" />
                 </div> -->
                 <div class="color-demonstrator"></div>
-
+             
+                <p class="color-status" id="colorStatus" style="height: 12px; width: 11px; border-radius: 50%; background-color: transparent; position: absolute; border: none;" ></p>
                     <div class="input-container" id="color-pick" title="Color Picker">
-                      
-                        <input type="color" class="icon-input" id="chooseColor">
+                        <input type="color" class="icon-input" id="chooseColor"  onchange="updateColor(this.value)" >
                     </div>
                     <label id="tool-color-localization" class="label-tool"
                         style="font-size:10px;font-weight:400;margin-top: 12px;line-height: 12px;">
@@ -803,18 +803,22 @@
         <div id="south" class='direction'><i class="fas fa-chevron-down"></i></div>
     </div> -->
 
+    <div class="localization">
+        <img src="Left-Logo.svg" width="200" style="margin-right: 4px" />
+        <select id="languageSelect" onchange="changeLanguage()">
+
+            <option value="en">English</option>
+            <option value="hi">हिंदी</option>
+        </select>
+    </div>
+    <div class="pageNumberContainer">
+        <p class="pageNumber" id="pageNumber"></p>
+    </div>
     <div id="board" class="unselectable">
         <!-- <img id="destination" /> -->
         <div class="localization">
-            <img src="Left-Logo.svg" width="200" style="margin-right: 4px" />
-            <select id="languageSelect" onchange="changeLanguage()">
-
-                <option value="en">English</option>
-                <option value="hi">हिंदी</option>
-            </select>
-        </div>
-        <div class="pageNumberContainer">
-            <p class="pageNumber" id="pageNumber"></p>
+            <img src="Left-Logo.svg" width="200" style="margin-right: 4px;margin-top:8px"/>
+            
         </div>
 
         <svg id="canvas" width="500" height="500" viewBox="0 0 500 500" svgHeightversion="1.1"
@@ -1161,7 +1165,7 @@
 
     <script src="tools/handNew/hand.js"></script>
     <script src="tools/grid/grid.js"></script>
-    <script src="tools/eraser2/eraser2.js"></script>
+    <!-- <script src="tools/eraser2/eraser2.js"></script> -->
 
     <!-- BEGIN CALCULATOR TOOL-->
     <!-- Calculator dep: Desmos-->
